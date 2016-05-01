@@ -8,11 +8,11 @@ use Illuminate\Support\ServiceProvider;
  */
 class LaravelServiceProvider extends ServiceProvider {
 
-	/**
-	 * Indicates if loading of the provider is deferred.
-	 *
-	 * @var bool
-	 */
+    /**
+     * Indicates if loading of the provider is deferred.
+     *
+     * @var bool
+     */
     protected $defer = true;
 
     /**
@@ -33,7 +33,7 @@ class LaravelServiceProvider extends ServiceProvider {
      */
     public function provides() {
         return [
-	        \RubenArakelyan\LaravelSessionFilesToRedis\TransferSessionFilesToRedisCommand::class,
+            \RubenArakelyan\LaravelSessionFilesToRedis\TransferSessionFilesToRedisCommand::class,
         ]
     }
 }
