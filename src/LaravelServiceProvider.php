@@ -8,15 +8,12 @@ use Illuminate\Support\ServiceProvider;
  */
 class LaravelServiceProvider extends ServiceProvider {
 
+	/**
+	 * Indicates if loading of the provider is deferred.
+	 *
+	 * @var bool
+	 */
     protected $defer = true;
-
-    /**
-     * Bootstrap the application events.
-     *
-     * @return void
-     */
-    public function boot() {
-    }
 
     /**
      * Register the service provider.
@@ -27,5 +24,16 @@ class LaravelServiceProvider extends ServiceProvider {
         $this->commands([
             \RubenArakelyan\LaravelSessionFilesToRedis\TransferSessionFilesToRedisCommand::class,
         ]);
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides() {
+        return [
+	        \RubenArakelyan\LaravelSessionFilesToRedis\TransferSessionFilesToRedisCommand::class,
+        ]
     }
 }
