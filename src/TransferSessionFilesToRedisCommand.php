@@ -1,4 +1,5 @@
-<?php namespace RubenArakelyan\LaravelSessionFilesToRedis;
+<?php
+namespace RubenArakelyan\LaravelSessionFilesToRedis;
 
 use Illuminate\Console\Command;
 
@@ -6,7 +7,8 @@ use Illuminate\Console\Command;
  * Class TransferSessionFilesToRedisCommand
  * @package RubenArakelyan\LaravelSessionFilesToRedis
  */
-class TransferSessionFilesToRedisCommand extends Command {
+class TransferSessionFilesToRedisCommand extends Command
+{
 
     /**
      * The console command name.
@@ -35,7 +37,8 @@ class TransferSessionFilesToRedisCommand extends Command {
      *
      * @return void
      */
-    public function fire() {
+    public function fire()
+    {
         $session_path = storage_path('framework/sessions');
         $directory = new \DirectoryIterator($session_path);
         

@@ -1,4 +1,5 @@
-<?php namespace RubenArakelyan\LaravelSessionFilesToRedis;
+<?php
+namespace RubenArakelyan\LaravelSessionFilesToRedis;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -6,7 +7,8 @@ use Illuminate\Support\ServiceProvider;
  * Class LaravelServiceProvider
  * @package RubenArakelyan\LaravelSessionFilesToRedis
  */
-class LaravelServiceProvider extends ServiceProvider {
+class LaravelServiceProvider extends ServiceProvider
+{
 
     /**
      * Indicates if loading of the provider is deferred.
@@ -20,7 +22,8 @@ class LaravelServiceProvider extends ServiceProvider {
      *
      * @return void
      */
-    public function register() {
+    public function register()
+    {
         $this->commands([
             \RubenArakelyan\LaravelSessionFilesToRedis\TransferSessionFilesToRedisCommand::class,
         ]);
@@ -31,7 +34,8 @@ class LaravelServiceProvider extends ServiceProvider {
      *
      * @return array
      */
-    public function provides() {
+    public function provides()
+    {
         return [
             \RubenArakelyan\LaravelSessionFilesToRedis\TransferSessionFilesToRedisCommand::class,
         ];
