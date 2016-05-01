@@ -3,10 +3,10 @@
 use Illuminate\Console\Command;
 
 /**
- * Class TransferSessionFilesToRedis
+ * Class TransferSessionFilesToRedisCommand
  * @package RubenArakelyan\LaravelSessionFilesToRedis
  */
-class TransferSessionFilesToRedis extends Command {
+class TransferSessionFilesToRedisCommand extends Command {
 
     /**
      * The console command name.
@@ -20,7 +20,7 @@ class TransferSessionFilesToRedis extends Command {
      *
      * @var string
      */
-    protected $description = 'Migrate sessions from file storage to Redis.';
+    protected $description = 'Transfer sessions from file storage to Redis.';
 
 
     /**
