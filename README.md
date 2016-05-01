@@ -1,6 +1,6 @@
 # Transfer Session Files to Redis command for Laravel
 
-This package provides an Artisan command for Laravel to migrate existing session from file-based storage to Redis. It is intended to be used during a migration from file-based to Redis session management, in order to preserve existing sessions.
+This package provides an Artisan command for Laravel to transfer existing session from file-based storage to Redis. It is intended to be used during a migration from file-based to Redis session management, in order to preserve existing sessions.
 
 ### Requirements
 
