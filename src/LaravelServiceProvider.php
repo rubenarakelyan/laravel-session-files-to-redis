@@ -13,7 +13,7 @@ class LaravelServiceProvider extends ServiceProvider {
      *
      * @var bool
      */
-    protected $defer = true;
+    protected $defer = false;
 
     /**
      * Register the service provider.
@@ -34,6 +34,6 @@ class LaravelServiceProvider extends ServiceProvider {
     public function provides() {
         return [
             \RubenArakelyan\LaravelSessionFilesToRedis\TransferSessionFilesToRedisCommand::class,
-        ]
+        ];
     }
 }
