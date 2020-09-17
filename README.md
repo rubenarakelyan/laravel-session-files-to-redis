@@ -45,7 +45,7 @@ When contributing please consider the following guidelines:
 
 ### Maintainer
 
-This package is maintained by [Ruben Arakelyan](https://ruben.am/).
+This package is maintained by [Ruben Arakelyan](https://ruben.arakelyan.uk/).
 
 ### License
 
